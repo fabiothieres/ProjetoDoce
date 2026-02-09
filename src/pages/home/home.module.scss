@@ -1,0 +1,56 @@
+.mainHome {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  padding-bottom: 5rem;
+  background: linear-gradient(180deg, #ffffff 100%, #ffd8eaa4 0%, #ffffff 60%);
+
+  img {
+    width: 25%;
+    border-radius: 14px;
+    
+  }
+
+  .textoHome {
+    display: flex;
+    flex-direction: column;
+    
+
+    h1,
+    h2 {
+      font-size: 60px;
+      font-family: "Playfair Display", serif;
+      font-weight: 100;
+      margin: 0 0 24px;
+    }
+
+    h2 {
+      color: #fb64b6;
+    }
+
+    p {
+      margin: 0 0 24px;
+      font-size: 18px;
+      width: 65%;
+      font-weight: 0;
+      line-height: 1.6;
+    }
+
+    .linkCardapio {
+      border: none;
+      background-color: #fb64b6;
+      width: 15rem;
+      padding: 1rem;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}
