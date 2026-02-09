@@ -28,7 +28,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 
     ul {
       display: flex;
@@ -48,6 +47,10 @@
           color: #fb64b6;
         }
       }
+    }
+
+    @media (max-width: 500px) {
+      display: none;
     }
   }
 }
