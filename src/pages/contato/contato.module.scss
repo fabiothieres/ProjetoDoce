@@ -1,4 +1,18 @@
 .mainContato {
-    min-height: 100vh;
-    padding-bottom: 20rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    margin: 20px 0 24px;
+  }
+
+  p {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
 }
