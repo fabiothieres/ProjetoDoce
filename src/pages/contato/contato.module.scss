@@ -15,4 +15,46 @@
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
   }
+
+  .containerInfo {
+    padding: 2rem;
+    .formContato {
+      box-shadow: 0px 3px 3px 3px rgba($color: #c2c2c2, $alpha: 0.5);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      
+      input {
+        width: 25rem;
+        padding: 0.75rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .caixaMensagem {
+        height: 6rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin: 1rem 0;
+        padding: 1rem;
+      }
+
+      button {
+        padding: 0.75rem;
+        background-color: #FB64B6;
+        color: #fff;
+        border: none;
+        border-radius: 14px;
+      }
+
+      label {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+      }
+    }
+  }
+
 }
