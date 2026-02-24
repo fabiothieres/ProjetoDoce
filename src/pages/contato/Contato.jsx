@@ -71,7 +71,7 @@ function Contato() {
               <div className={s.circulo}>
                 <FiPhone />
               </div>
-              <div className={s.telefone}>
+              <div className={s.infoContato}>
                 <h3>Telefone</h3>
                 <p>+55 (48) 99867-3404</p>
               </div>
@@ -81,7 +81,7 @@ function Contato() {
               <div className={s.circulo}>
                 <FiMail />
               </div>
-              <div className={s.email}>
+              <div className={s.infoContato}>
                 <h3>Email</h3>
                 <p>floripadoceria@gmail.com</p>
               </div>

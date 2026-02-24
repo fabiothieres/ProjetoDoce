@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import s from "./home.module.scss";
-import Banner from "../../assets/banner.jpg"
+import Banner from "../../assets/banner.jpg";
 
 function Home() {
   return (
