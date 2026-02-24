@@ -9,15 +9,6 @@
   background-color: #fff;
   z-index: 100;
 
-  .hamburguer {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #fb64b6;
-  }
-
   .BoxLogo {
     display: flex;
     align-items: center;
@@ -29,8 +20,23 @@
       color: #fb64b6;
     }
     img {
-      width: 50px;
+      width: 10%;
       border-radius: 50%;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 1rem;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: #fb64b6;
+      border-radius: 5px;
     }
   }
 
@@ -52,7 +58,6 @@
         a {
           text-decoration: none;
           color: #000;
-          transition: 0.2s;
         }
         a:hover {
           color: #fb64b6;
@@ -61,33 +66,34 @@
     }
 
     @media (max-width: 500px) {
-      .hamburguer {
-        display: block;
-        z-index: 20;
-      }
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 
-      .nav{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        transition: right 0.3s ease-in-out;
-        display: flex;
+      ul {
         flex-direction: column;
-        justify-content: center;
-        z-index: 15;
+        align-items: center;
+        padding: 1.5rem 0;
+        gap: 1.5rem;
 
-        &.ativo {
-          right: 0;
-        }
-
-        ul {
-          flex-direction: column;
-          align-items: center;
-          padding-top: 2rem;
+        li {
+          margin-right: 0;
         }
       }
+
+      &.active {
+          display: flex;
+        }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .hamburger {
+      display: flex;
     }
   }
 }

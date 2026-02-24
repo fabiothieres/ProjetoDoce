@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
-import s from "./Header.module.scss"
+import s from "./Header.module.scss";
 import Logo from "../../assets/logo.jpg";
-import {useState} from 'react';
+import { useState } from "react";
 
 const Header = () => {
+  const [menuAberto, setMenuAberto] = useState(false);
+  const alternarMenu = () => {
+    setMenuAberto(!menuAberto);
+  };
 
-  const [aberto, setAberto] = useState(false);
-  const toggleMenu = () => setAberto(!aberto);
+  const fecharMenu = () => {
+    setMenuAberto(false);
+  }
 
   return (
     <header className={s.header}>
@@ -15,20 +20,22 @@ const Header = () => {
         <h1>Doceria Floripa</h1>
       </Link>
 
-      <button className={s.hamburguer} onClick={toggleMenu}>
-        {aberto ? "✕" : "☰" }
-      </button>
+      <div className={s.hamburger} onClick={alternarMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-      <nav className={`${s.nav} ${aberto ? s.ativo : ""}`}>
+      <nav className={`${s.nav} ${menuAberto ? s.active : ""}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={'fecharMenu'}>Home</Link>
           </li>
           <li>
-            <Link to="/Cardapio">Cardápio</Link>
+            <Link to="/Cardapio" onClick={'fecharMenu'}>Cardápio</Link>
           </li>
           <li>
-            <Link to="/Contato">Contato</Link>
+            <Link to="/Contato" onClick={'fecharMenu'}>Contato</Link>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,6 @@
 import s from "./contato.module.scss";
 import { useState } from "react";
+import { FiPhone, FiMail, FiMapPin, FiInstagram } from "react-icons/fi";
 
 function Contato() {
   const [dados, setDados] = useState({
@@ -24,7 +25,6 @@ function Contato() {
     window.open(linkFinal, "_blank");
   };
 
-
   return (
     <main className={s.mainContato}>
       <h1>Entre em Contato</h1>
@@ -34,18 +34,77 @@ function Contato() {
       </p>
       <section className={s.containerInfo}>
         <form className={s.formContato} onSubmit={abrirWhatsapp}>
-
           <label>Nome</label>
-          <input name="nome" type="text" onChange={handleChange} required placeholder="Seu nome" />
+          <input
+            name="nome"
+            type="text"
+            onChange={handleChange}
+            required
+            placeholder="Seu nome"
+          />
 
           <label>Seu Whatsapp (com DDD)</label>
 
-          <input name="telefoneCliente" type="tel" onChange={handleChange} required placeholder="(00) 90000-0000" />
+          <input
+            name="telefoneCliente"
+            type="tel"
+            onChange={handleChange}
+            required
+            placeholder="(00) 90000-0000"
+          />
 
           <label>Mensagem</label>
-          <textarea name="mensagem" className={s.caixaMensagem} onChange={handleChange} placeholder="Seu pedido ou sua dúvida..." required></textarea>
+          <textarea
+            name="mensagem"
+            className={s.caixaMensagem}
+            onChange={handleChange}
+            placeholder="Seu pedido ou sua dúvida..."
+            required
+          ></textarea>
           <button type="submit">Enviar Mensagem</button>
         </form>
+
+        <section className={s.containerCards}>
+          <article>
+            <h2>Informações</h2>
+            <div className={s.item}>
+              <div className={s.circulo}>
+                <FiPhone />
+              </div>
+              <div className={s.telefone}>
+                <h3>Telefone</h3>
+                <p>+55 (48) 99867-3404</p>
+              </div>
+            </div>
+
+            <div className={s.item}>
+              <div className={s.circulo}>
+                <FiMail />
+              </div>
+              <div className={s.email}>
+                <h3>Email</h3>
+                <p>floripadoceria@gmail.com</p>
+              </div>
+            </div>
+          </article>
+
+          <article className={s.redes}>
+            <h2>Redes Sociais</h2>
+            <p>Siga-nos nas redes sociais e fique por dentro das novidades!</p>
+            <div className={s.boxIcons}>
+              <div className={s.bgIcons}>
+                <a href="https://www.instagram.com/doceria.floripa/" target="_blank">
+                  <FiInstagram />
+                </a>
+              </div>
+              <div className={s.bgIcons}>
+                <a href="mailto:floripadoceria@gmail.com" target="_blank">
+                  <FiMail />
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
       </section>
     </main>
   );
