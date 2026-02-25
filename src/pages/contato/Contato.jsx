@@ -1,6 +1,7 @@
 import s from "./contato.module.scss";
 import { useState } from "react";
-import { FiPhone, FiMail, FiMapPin, FiInstagram } from "react-icons/fi";
+import { FiPhone, FiMail, FiInstagram } from "react-icons/fi";
+import { PiTiktokLogoLight  } from "react-icons/pi";
 
 function Contato() {
   const [dados, setDados] = useState({
@@ -100,6 +101,11 @@ function Contato() {
               <div className={s.bgIcons}>
                 <a href="mailto:floripadoceria@gmail.com" target="_blank">
                   <FiMail />
+                </a>
+              </div>
+              <div className={s.bgIcons}>
+                <a href="https://www.tiktok.com/@doceria.floripa" target="_blank">
+                  <PiTiktokLogoLight className={s.iconTikTok}/>
                 </a>
               </div>
             </div>
