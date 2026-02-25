@@ -1,71 +1,115 @@
 .mainCardapio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  min-height: 100vh;
+  
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .textoCardapio {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+    h1 {
+      font-family: "Playfair Display", serif;
+    }
+  }
+
+  .containerCards {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-top: 2rem;
-    height: auto;
+    margin-top: 7rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .textoCards {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+
+    .boxPrecoLink {
+      display: flex;
+      padding: 0 12px;
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      justify-content: space-between;
+
+      a,
+      p {
+        font-size: 1rem;
+        color: #f6339a;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .mainCardapio {
     padding-bottom: 4rem;
 
     .textoCardapio {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
+        h1 {
+            font-size: 2rem;
+        }
 
-        h2 {
-            font-family: 'Playfair Display', serif;
+        p {
+            font-size: 1rem;
         }
     }
 
     .containerCards {
-        display: flex;
-        flex-direction: column;
-        gap: 1.75rem;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        width: 90%;
+      flex-direction: column;
+      gap: 1.75rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      width: 90%;
 
-        article {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 80%;
-            border-radius: 0 0 12px 12px;
-            box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.1);
-            padding-bottom: 1rem;
-
-            img {
-                width: 100%;
-                height: 280px;
-                border-radius: 12px 12px 0 0;
-            }
-
-            .textoCards {
-                padding: 12px;
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-
-                p {
-                    font-size: 14px;
-                    width: 100%;
-                }
-            }
-
-            .boxPrecoLink {
-                display: flex;
-                padding: 0 12px;
-                width: 100%;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                justify-content: space-between;
-
-                a, p {
-                    color: #F6339A;
-                }
-            }
-        }
+      article {
+        width: 80%;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.1);
+        padding-bottom: 1rem;
+      }
     }
+  }
 }
