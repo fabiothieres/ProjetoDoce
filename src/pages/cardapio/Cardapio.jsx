@@ -34,7 +34,7 @@ function Cardapio() {
           <img src={bolo} alt="Imagem de bolo" />
           <div className={s.textoCards}>
             <h3>Bolos Decorados</h3>
-            <p>Bolos personalizados para ocasiões especiais</p>
+            <p>Bolos personalizados para momentos importantes</p>
           </div>
           <div className={s.boxPrecoLink}>
             <p>A partir de R$80</p>
