@@ -4,7 +4,7 @@ Primeiro projeto prático **100% funcional** desenvolvido por mim.
 
 A **Doceria Floripa** é uma doceria real, e o site está oficialmente no ar:
 
-🔗 <a href="https://doceriafloripa.vercel.app" target="_blank" rel="noopener noreferrer">https://doceriafloripa.vercel.app</a>
+🔗 https://doceriafloripa.vercel.app
 
 ---
 
