@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import s from "./header.module.scss";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logo.png";
 import { useState } from "react";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
 
   const fecharMenu = () => {
     setMenuAberto(false);
-  }
+  };
 
   return (
     <header className={s.header}>
@@ -29,13 +29,19 @@ const Header = () => {
       <nav className={`${s.nav} ${menuAberto ? s.active : ""}`}>
         <ul>
           <li>
-            <Link to="/" onClick={'fecharMenu'}>Home</Link>
+            <Link to="/" onClick={"fecharMenu"}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/Cardapio" onClick={'fecharMenu'}>Cardápio</Link>
+            <Link to="/Cardapio" onClick={"fecharMenu"}>
+              Cardápio
+            </Link>
           </li>
           <li>
-            <Link to="/Contato" onClick={'fecharMenu'}>Contato</Link>
+            <Link to="/Contato" onClick={"fecharMenu"}>
+              Contato
+            </Link>
           </li>
         </ul>
       </nav>
