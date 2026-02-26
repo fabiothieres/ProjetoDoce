@@ -18,8 +18,11 @@
       color: #fb64b6;
     }
     img {
-      width: 14%;
-      border-radius: 50%;
+      width: 5%;
+      transform: rotate(180deg);
+      @media (max-width: 500px) {
+        width: 7%;
+      }
     }
   }
 

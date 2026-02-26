@@ -1,1 +1,189 @@
-/*# sourceMappingURL=contato.module.css.map */
+.mainContato {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContato h1 {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  margin: 20px 0 24px;
+}
+.mainContato p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.mainContato .containerInfo {
+  padding: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+.mainContato .containerInfo .formContato {
+  box-shadow: 0px 3px 3px 3px rgba(194, 194, 194, 0.5);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.mainContato .containerInfo .formContato textarea {
+  font-size: 16px;
+}
+.mainContato .containerInfo .formContato input {
+  width: 28rem;
+  padding: 0.75rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+}
+.mainContato .containerInfo .formContato .caixaMensagem {
+  height: 7rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.mainContato .containerInfo .formContato button {
+  padding: 0.75rem;
+  background-color: #fb64b6;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  height: 3rem;
+}
+.mainContato .containerInfo .formContato label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.mainContato .containerCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.mainContato .containerCards article,
+.mainContato .containerCards div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.mainContato .containerCards article {
+  height: 15rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 3px 3px 3px rgba(194, 194, 194, 0.5);
+}
+.mainContato .containerCards article h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1.2rem;
+}
+.mainContato .containerCards article .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.mainContato .containerCards article .item .infoContato h3 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.mainContato .containerCards article .item .infoContato p {
+  font-size: 1rem;
+}
+.mainContato .containerCards article .item .circulo {
+  background-color: #fce7f3;
+  color: #f6339a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.mainContato .containerCards .redes {
+  background: linear-gradient(120deg, #fae7f3 0%, #deeafe 100%);
+}
+.mainContato .containerCards .redes p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+}
+.mainContato .containerCards .redes .boxIcons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.mainContato .containerCards .redes .boxIcons a {
+  color: inherit;
+  text-decoration: none;
+}
+.mainContato .containerCards .redes .boxIcons .bgIcons {
+  background-color: #fff;
+  color: #f6339a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.mainContato .containerCards .redes .iconTikTok {
+  font-size: 1.25em;
+}
+
+@media (max-width: 500px) {
+  .mainContato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding: 0 0.5rem 2rem 0.5rem;
+    width: 100%;
+  }
+  .mainContato h1 {
+    font-size: 2.25rem;
+  }
+  .mainContato p {
+    font-size: 1rem;
+  }
+  .mainContato .containerInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .mainContato .containerInfo .formContato {
+    padding: 20px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .mainContato .containerInfo .formContato input {
+    width: 100%;
+    font-size: 16px;
+  }
+  .mainContato .containerInfo .formContato .caixaMensagem {
+    width: 100%;
+  }
+  .mainContato .containerInfo .formContato button {
+    width: 100%;
+  }
+  .mainContato .containerInfo article .item {
+    width: auto;
+  }
+  .mainContato .containerInfo article .item .infoContato {
+    align-items: flex-start;
+  }
+  .redes {
+    align-items: center;
+  }
+}/*# sourceMappingURL=contato.module.css.map */

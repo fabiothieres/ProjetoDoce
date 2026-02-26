@@ -1,11 +1,11 @@
 import s from "./footer.module.scss";
-import Logo from "../../assets/logo.png";
+import logo from "../../assets/logo.png";
 
 function Footer() {
   return (
     <footer className={s.footer}>
       <div className={s.BoxLogo}>
-        <img src={Logo} alt="Logo doceria" />
+        <img src={logo} alt="Logo doceria" />
         <h1>Doceria Floripa</h1>
       </div>
       <div className={s.BoxTexto}>

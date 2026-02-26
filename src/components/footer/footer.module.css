@@ -5,8 +5,7 @@
   width: 100%;
   gap: 1rem;
   padding: 1.5rem;
-  background: linear-gradient(180deg, rgba(253, 178, 208, 0.2745098039) 0%, #fff 99%);
-  box-shadow: 0 0 4px #fdb2d0;
+  background: linear-gradient(90deg, #fce4ec 0%, #f3e5f5 50%, #e3f2fd 100%);
 }
 .footer .BoxLogo {
   display: flex;
@@ -18,10 +17,18 @@
   color: #fb64b6;
 }
 .footer .BoxLogo img {
-  width: 14%;
-  border-radius: 50%;
+  width: 5%;
+  transform: rotate(180deg);
+}
+@media (max-width: 500px) {
+  .footer .BoxLogo img {
+    width: 7%;
+  }
 }
 .footer .BoxTexto {
   display: flex;
   align-items: center;
+}
+.footer p {
+  text-align: center;
 }/*# sourceMappingURL=footer.module.css.map */

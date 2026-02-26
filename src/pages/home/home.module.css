@@ -4,18 +4,17 @@
   width: 100%;
   min-height: 100vh;
   align-items: center;
-  padding-bottom: 5rem;
+  padding: 3rem 0 5rem 0;
   background: linear-gradient(180deg, #ffffff 100%, rgba(255, 216, 234, 0.6431372549) 0%, #ffffff 60%);
 }
 .mainHome img {
   width: 25%;
   border-radius: 14px;
-  margin-right: 17rem;
 }
 .mainHome .textoHome {
   display: flex;
   flex-direction: column;
-  margin-left: 20rem;
+  width: 40%;
 }
 .mainHome .textoHome h1,
 .mainHome .textoHome h2 {
@@ -28,9 +27,9 @@
   color: #fb64b6;
 }
 .mainHome .textoHome p {
-  margin: 0 0 24px;
+  margin: 0 0 30px;
   font-size: 18px;
-  width: 65%;
+  width: 95%;
   font-weight: 0;
   line-height: 1.6;
 }
@@ -46,4 +45,41 @@
   text-decoration: none;
   text-align: center;
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 500px) {
+  .mainHome {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem 10rem 1rem;
+    min-height: 100%;
+  }
+  .mainHome .textoHome {
+    width: 100%;
+    align-items: center;
+  }
+  .mainHome .textoHome h1, .mainHome .textoHome h2 {
+    font-size: 2.75rem;
+    width: 90%;
+    margin: 0 0 10px;
+  }
+  .mainHome .textoHome h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .mainHome .textoHome p {
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  .mainHome .textoHome .linkCardapio {
+    margin-top: 3rem;
+    width: 90%;
+  }
+  .mainHome img {
+    display: none;
+  }
 }/*# sourceMappingURL=home.module.css.map */
