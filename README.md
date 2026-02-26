@@ -1,16 +1,72 @@
-# React + Vite
+# 🍰 Doceria Floripa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Primeiro projeto prático **100% funcional** desenvolvido por mim.
 
-Currently, two official plugins are available:
+A **Doceria Floripa** é uma doceria real, e o site está oficialmente no ar:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 https://doceriafloripa.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Sobre o Projeto
 
-## Expanding the ESLint configuration
+Este foi meu primeiro projeto completo publicado, desenvolvido do zero com foco em criar uma aplicação **real, funcional e pronta para uso**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A proposta foi construir um site moderno, organizado e responsivo para uma doceria local, permitindo que os clientes:
+
+- Visualizem o cardápio  
+- Conheçam os produtos  
+- Entrem em contato com facilidade  
+
+Todo o projeto foi pensado para simular uma entrega profissional, desde a estrutura até a publicação.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **React**
+- **Vite**
+- **React Router DOM**
+- **SCSS**
+- **Vercel** (Deploy)
+
+---
+
+## 🛠 Funcionalidades Desenvolvidas
+
+- Estruturação completa da aplicação com React  
+- Navegação entre páginas utilizando React Router DOM  
+- Estilização modular com SCSS  
+- Layout responsivo (Mobile First)  
+- Organização e componentização da aplicação  
+- Build e deploy em produção  
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Esse projeto marcou minha transição de estudos teóricos para prática real.
+
+Foi a primeira vez que desenvolvi, finalizei e publiquei uma aplicação completa funcionando em produção.
+
+Além da parte técnica, o objetivo foi entender o fluxo completo de desenvolvimento:
+
+1. Desenvolvimento  
+2. Organização de pastas  
+3. Versionamento  
+4. Build  
+5. Deploy  
+
+---
+
+## 💻 Status
+
+✅ Projeto finalizado  
+✅ Publicado em produção  
+✅ Disponível para acesso público  
+
+---
+
+## 👨‍💻 Desenvolvido por
+
+**Fabio Thieres**
