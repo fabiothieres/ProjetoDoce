@@ -25,7 +25,7 @@ function Cardapio() {
             <p>Brownies decorados com coberturas especiais</p>
           </div>
           <div className={s.boxPrecoLink}>
-            <p>A partir de R$10</p>
+            <p>A partir de R$6,50</p>
             <a href="https://wa.me/5548998673404?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20brownie.%F0%9F%98%8A">Encomendar</a>
           </div>
         </article>
@@ -37,7 +37,7 @@ function Cardapio() {
             <p>Bolos personalizados para momentos importantes</p>
           </div>
           <div className={s.boxPrecoLink}>
-            <p>A partir de R$80</p>
+            <p>Consulte valores</p>
             <a href="https://wa.me/5548998673404?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20um%20bolo.%F0%9F%98%8A">Encomendar</a>
           </div>
         </article>
@@ -67,7 +67,7 @@ function Cardapio() {
         </article>
 
         <article>
-          <img src={copo} alt="Ovo de páscoa" />
+          <img src={copo} alt="Copo da felicidade" />
           <div className={s.textoCards}>
             <h3>Copo da Felicidade</h3>
             <p>Copo da felicidade para tornar seu dia mais feliz</p>
