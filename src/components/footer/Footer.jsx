@@ -9,7 +9,7 @@ function Footer() {
         <h1>Doceria Floripa</h1>
       </div>
       <div className={s.BoxTexto}>
-        <p>Feito com 🩷 e muito carinho!</p>
+        <p>Feito com ❤️ e muito carinho!</p>
       </div>
       <p>© 2026 Doceria Floripa. Todos os direitos reservados.</p>
     </footer>
